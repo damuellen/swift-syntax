@@ -5,6 +5,8 @@ import Foundation
 
 #if canImport(Glibc)
 import Glibc
+#elseif os(Windows)
+import CRT
 #else
 import Darwin.C
 #endif
